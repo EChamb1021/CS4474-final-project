@@ -112,8 +112,8 @@ function DialogUI( stage, gameState ){
  			messages["custom"] = ["Me: " + textSeq.customText ];
  		}
 
-
- 		if( textSeq.random ){
+		// ensure that random dialogue doesn't appear overtop of informative custom dialogue
+ 		if( textSeq.random && !that.currDialogueSeq.more()){
  			that.showRandomConvo();
  			return;
  		}
