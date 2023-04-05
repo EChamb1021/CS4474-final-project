@@ -1112,11 +1112,12 @@ function ImgButton( stage, gameState, x, y, mouseOutImg, mouseOverImg, eventCmd,
 
 function VolumeButton( stage, gameState, x, y, eventCmd, arg, sound, altfunc ){
 
-	var mouseOverMute = "/res/screens/GUI/volume-mute-hover.png";
-	var mouseOutMute = "/res/screens/GUI/volume-mute.png";
+	var env = window.location.pathname
+	var mouseOverMute = env + "res/controls/volume-mute-hover.png";
+	var mouseOutMute = env + "res/controls/volume-mute.png";
 
-	var mouseOverVolume = "/res/screens/GUI/volume-hover.png";
-	var mouseOutVolume = "/res/screens/GUI/volume.png";
+	var mouseOverVolume = env + "res/controls/volume-hover.png";
+	var mouseOutVolume = env + "res/controls/volume.png";
 	
 	if (window.muted == false){
 		var mouseOver = new createjs.Bitmap(mouseOverVolume);
