@@ -283,12 +283,6 @@ function GameState(){
     queue.loadFile( {id: "res/screens/Window/Test4TransparencyFull.png", src:"res/screens/Window/Test4TransparencyFull.png"});
     queue.loadFile( {id: "res/screens/Window/Stars.png", src:"res/screens/Window/Stars.png"});
 
-	//Volume images
-	queue.loadFile( {id: "res/controls/volume.png", src:"res/controls/volume.png"});
-	queue.loadFile( {id: "res/controls/volume-mute.png", src:"res/controls/volume-mute.png"});
-	queue.loadFile( {id: "res/controls/volume-hover.png", src:"res/controls/volume-hover.png"});
-	queue.loadFile( {id: "res/controls/volume-mute-hover.png", src:"res/controls/volume-mute-hover.png"});
-
 
     this.screenState = 0;
     this.newScreen = "";
